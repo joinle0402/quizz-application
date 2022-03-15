@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #2fa4ff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  background-color: #fff;
+  width: 600px;
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  color: #f94144;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.main {
+  background-color: #fff;
+  width: 1000px;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.main-question {
+  font-size: 23px;
+  font-weight: 500;
+  line-height: 40px;
+  margin-bottom: 20px;
+}
+
+.main-answers-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  font-weight: 400;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.main-answer-radio {
+  display: none;
+}
+
+.main-answer {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 10px;
+}
+
+.main-answer-radio:checked ~ .main-answer-label {
+  background-color: #2fa4ff;
+}
+
+.main-answer-label {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.main-answer-label:hover {
+  background-color: rgba(47, 164, 255, 0.4);
+}
+
+.main-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-pagination {
+  display: flex;
+  gap: 5px;
+}
+
+.main-button {
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 400;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.main-button-active {
+  background-color: #087bd3;
+  color: rgb(255, 255, 255);
+}
+
+.main-button-create {
+  background-color: #058514;
+  color: rgb(255, 255, 255);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.form-group .form-label {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.form-input {
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 20px;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.5) 0px 4px 3px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  border-radius: 5px;
+}
+
+.quiz-form-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-submit {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.form-group-anwsers {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
